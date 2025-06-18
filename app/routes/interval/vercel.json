@@ -1,0 +1,8 @@
+{
+    "functions": {
+        "api/sync-all.js": {
+            "runtime": "nodejs20.x",
+            "schedule": "*/5 * * * *"
+        }
+    }
+}
