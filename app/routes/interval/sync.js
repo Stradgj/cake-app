@@ -2,6 +2,9 @@ import { json } from "@remix-run/node";
 import { prisma } from "../../db.server";
 
 export async function loader() {
+  if (req.headers.get('Authorization') !== `Bearer ${process.env.CRON_SECRET}`) {
+  return res.status(401).end('Unauthorized');
+}
     const stores = await prisma.store.findMany();
     const primary = process.env.MAIN_STORE_DOMAIN;
 
