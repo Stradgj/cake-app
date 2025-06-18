@@ -1,6 +1,6 @@
 {
   "crons": [{
-    "path": "/interval/sync.js",
+    "path": "/interval/sync",
     "schedule": "*/5 * * * *"
   }]
 }
