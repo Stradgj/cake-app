@@ -1,7 +1,7 @@
 {
     "functions": {
         "api/sync-all.js": {
-            "runtime": "nodejs20.x",
+            "runtime": "nodejs22.x",
             "schedule": "*/5 * * * *"
         }
     }
