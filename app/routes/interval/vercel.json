@@ -1,8 +1,6 @@
 {
-    "functions": {
-        "api/sync-all.js": {
-            "runtime": "nodejs22.x",
-            "schedule": "*/5 * * * *"
-        }
-    }
+  "crons": [{
+    "path": "/interval/sync.js",
+    "schedule": "*/5 * * * *"
+  }]
 }
