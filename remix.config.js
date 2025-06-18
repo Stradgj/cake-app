@@ -1,6 +1,5 @@
 // remix.config.js
-import { vercelVite } from "@remix-run/vercel";
-
+const { vercelVite } = require("@remix-run/vercel");
 if (
   process.env.HOST &&
   (!process.env.SHOPIFY_APP_URL ||
@@ -11,9 +10,12 @@ if (
 }
 
 /** @type {import('@remix-run/dev').AppConfig} */
-export default {
-  ...vercelVite(), // 🟢 это ключ к SSR + API в Vercel
+module.exports = {
+  ...vercelVite(),
   ignoredRouteFiles: ["**/.*"],
   appDirectory: "app",
   dev: { port: 3000 },
 };
+
+
+
