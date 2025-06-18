@@ -17,7 +17,7 @@
     "prisma": "prisma",
     "build": "prisma generate && remix vite:build",
     "graphql-codegen": "graphql-codegen",
-    "vite": "vite"
+    "vite": "vite",
     "postinstall": "prisma generate && prisma migrate deploy"
   },
   "type": "module",
